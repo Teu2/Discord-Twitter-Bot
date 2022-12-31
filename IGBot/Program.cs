@@ -123,9 +123,6 @@ namespace IGbot // Note: actual namespace depends on the project name.
                     if (userTimeline.Result[0].Url == null) arg.Channel.SendMessageAsync($"Sorry :c, That user doesn't exist or doesn't have any posts");
 
                     var link = userTimeline.Result[0].Url;
-                    var item = userTimeline.Result[0].FullText;
-                    var test = userTimeline.Result[0].Hashtags;
-
                     arg.Channel.SendMessageAsync($"{link}");
 
                     return Task.CompletedTask;
